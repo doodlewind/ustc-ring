@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3"><form name="updateForm" class="ng-pristine ng-invalid ng-invalid-required">
+        <div class="col-xs-12">
+            <input type="text" ng-model="user.id" class="form-control input-lg" placeholder="你的戒指号，必填" ng-pattern="/^([0-9]){1,6}$/" required>
+            <br>
+        </div>
+        <div class="col-xs-12">
+            <input type="text" ng-model="user.mobile" class="form-control input-lg" placeholder="你的手机号，必填" ng-pattern="/([0-9]){11}/" required>
+            <br>
+        </div>
+        <div class="col-xs-12">
+            <input type="text" ng-model="user.ad" class="form-control input-lg" placeholder="140 字以内广告" ng-maxlength=140>
+            <br>
+        </div>
+        <div class="col-xs-6">
+            <input type="text" ng-model="user.followRing1" class="form-control input-lg" placeholder="关注号数1" ng-pattern="/^([0-9]){1,4}$/">
+            <br>
+        </div>
+        <div class="col-xs-6">
+            <input type="text" ng-model="user.followRing2" class="form-control input-lg" placeholder="关注号数2" ng-pattern="/^([0-9]){1,4}$/">
+            <br>
+        </div>
+        <div class="col-xs-6">
+            <input type="text" ng-model="user.followRing3" class="form-control input-lg" placeholder="关注号数3" ng-pattern="/^([0-9]){1,4}$/">
+            <br>
+        </div>
+        <div class="col-xs-6">
+            <input type="text" ng-model="user.followRing4" class="form-control input-lg" placeholder="关注号数4" ng-pattern="/^([0-9]){1,4}$/">
+            <br>
+        </div>
+        <div class="col-xs-6">
+            <input type="text" ng-model="user.followRing5" class="form-control input-lg" placeholder="关注号数5" ng-pattern="/^([0-9]){1,4}$/">
+            <br>
+        </div>
+        <div class="col-xs-6">
+            <button ng-click="updateInfo()" ng-disabled="updateForm.$invalid" class="btn btn-primary btn-lg btn-block" disabled="disabled">Update</button>
+            <br>
+        </div>
+    </form></div>
+</div>
